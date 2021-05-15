@@ -37,7 +37,7 @@ export type Author = {
   role: string
   description: string
   socialLinks: SocialLink[]
-  photo: Midia[]
+  photo: Midia
 }
 
 export type HeaderProps = {
