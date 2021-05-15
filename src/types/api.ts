@@ -25,6 +25,24 @@ export type Benefit = {
   item: string
 }
 
+export type SocialLink = {
+  url: string
+  title: string
+}
+
+export type Photo = {
+  url: string
+  alternativeText: string
+}
+
+export type Author = {
+  name: string
+  role: string
+  description: string
+  socialLinks: SocialLink[]
+  photo: Photo[]
+}
+
 export type HeaderProps = {
   title: string
   description: string
@@ -78,6 +96,11 @@ export type PricingBoxProps = {
     }
 }
 
+export type SectionAboutUsProps = {
+  title: string
+  authors: Author[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -87,4 +110,5 @@ export type LandingPageProps = {
   sectionModules: SectionModulesProps
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
+  sectionAboutUs: SectionAboutUsProps
 }
