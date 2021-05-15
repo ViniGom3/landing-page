@@ -16,7 +16,7 @@ const PricingBox = ({totalPrice, numberInstallments, priceInstallments, benefits
         De <span>R${totalPrice}</span> por apenas
       </S.FullPrice>
       <S.DiscountPrice>
-        <span>${numberInstallments} de</span> {priceInstallments}
+        <span>{numberInstallments}x de</span> {priceInstallments}
       </S.DiscountPrice>
     </S.Prices>
     <S.BenefitsList>
