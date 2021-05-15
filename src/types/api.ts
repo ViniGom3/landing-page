@@ -21,6 +21,10 @@ export type Module = {
   description: string
 }
 
+export type Benefit = {
+  item: string
+}
+
 export type HeaderProps = {
   title: string
   description: string
@@ -67,9 +71,7 @@ export type PricingBoxProps = {
   totalPrice: number
     numberInstallments: number
     priceInstallments: number
-    benefits: {
-      item: string
-    }
+    benefits: Benefit[]
     button: {
       label: string
       url: string
