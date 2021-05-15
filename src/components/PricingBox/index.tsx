@@ -20,8 +20,8 @@ const PricingBox = ({totalPrice, numberInstallments, priceInstallments, benefits
       </S.DiscountPrice>
     </S.Prices>
     <S.BenefitsList>
-      {benefits.map(benefit => (
-        <S.BenefitsItem>{benefit.item}</S.BenefitsItem>
+      {benefits.map((benefit, index) => (
+        <S.BenefitsItem key={index} >{benefit.item}</S.BenefitsItem>
       ))}
     </S.BenefitsList>
 
