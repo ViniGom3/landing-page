@@ -106,7 +106,7 @@ fragment sectionAboutUs on LandingPage {
           alternativeText
         }
       }
-    }
+  }
 }
 
 query GET_LANDING_PAGE {
