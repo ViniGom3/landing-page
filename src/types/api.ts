@@ -15,6 +15,12 @@ export type Concept = {
   title: string
 }
 
+export type Module = {
+  title: string
+  subtitle: string
+  description: string
+}
+
 export type HeaderProps = {
   title: string
   description: string
@@ -49,11 +55,7 @@ export type SectionConceptsProps = {
 
 export type SectionModulesProps = {
   title: string
-  modules: {
-    title: string
-    subtitle: string
-    description: string
-  }
+  modules: Module[]
 }
 
 export type LandingPageProps = {
