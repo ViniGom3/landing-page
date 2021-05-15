@@ -5,10 +5,7 @@ export type LogoProps = {
 
 export type TechIcon = {
   title: string
-  icon: {
-    url: string
-    alternativeText: string
-  }
+  icon: Midia
 }
 
 export type Concept = {
@@ -30,7 +27,7 @@ export type SocialLink = {
   title: string
 }
 
-export type Photo = {
+export type Midia = {
   url: string
   alternativeText: string
 }
@@ -40,7 +37,7 @@ export type Author = {
   role: string
   description: string
   socialLinks: SocialLink[]
-  photo: Photo[]
+  photo: Midia[]
 }
 
 export type HeaderProps = {
@@ -50,19 +47,13 @@ export type HeaderProps = {
     label: string
     url: string
   }
-  image: {
-    alternativeText: string
-    url: string
-  }
+  image: Midia
 }
 
 export type SectionAboutProjectProps = {
   title: string
   description: string
-  midia: {
-    url: string
-    alternativeText: string
-  }
+  midia: Midia
 }
 
 export type SectionTechProps = {
