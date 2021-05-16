@@ -111,12 +111,12 @@ fragment sectionAboutUs on LandingPage {
 
 fragment sectionReviews on LandingPage {
   sectionReviews {
+    title
     reviews {
       name
       text
       photo {
         url
-        alternativeText
       }
     }
   }
