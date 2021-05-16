@@ -122,6 +122,16 @@ fragment sectionReviews on LandingPage {
   }
 }
 
+fragment sectionFaq on LandingPage {
+  sectionFaq {
+      title
+      questions {
+        question
+        answer
+      }
+    }
+}
+
 query GET_LANDING_PAGE {
   landingPage {
     ...logo
@@ -134,6 +144,7 @@ query GET_LANDING_PAGE {
     ...pricingBox
     ...sectionAboutUs
     ...sectionReviews
+    ...sectionFaq
   }
 }
 `
